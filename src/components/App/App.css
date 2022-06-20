@@ -2,10 +2,42 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: "Mitr", sans-serif;
+  color: #f2f2f2;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #414858;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7b859d;
+  border-radius: 1000px;
+  border: solid 4px #414858;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a7aebe;
+}
+
+::-moz-selection {
+  background: #97a1b4;
+}
+
+::selection {
+  background: #97a1b4;
 }
 
 body {
   width: 100%;
   height: auto;
-  background-color: transparent;
+  background-color: #414858;
 }/*# sourceMappingURL=App.css.map */

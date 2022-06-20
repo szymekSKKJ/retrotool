@@ -1,0 +1,89 @@
+.borads {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+}
+@media screen and (max-width: 768px) {
+  .borads {
+    height: auto;
+    flex-direction: column;
+  }
+}
+.borads .borad {
+  width: auto;
+  height: calc(38.5vh - 32px);
+  aspect-ratio: 16/9;
+  background-color: #2b303b;
+  margin: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: solid 3px #2b303b;
+  border-radius: 8px;
+  position: relative;
+  flex-shrink: 0;
+  overflow: hidden;
+  transition: 333ms;
+}
+@media screen and (max-width: 768px) {
+  .borads .borad {
+    width: 90vw;
+    height: auto;
+    flex-direction: column;
+  }
+}
+.borads .borad:hover {
+  background-color: #20242c;
+}
+.borads .borad h1,
+.borads .borad span {
+  font-weight: 400;
+  z-index: 10;
+  pointer-events: none;
+  text-align: center;
+  line-height: 1.2;
+}
+.borads .borad h1 {
+  padding: 0px 16px 0px 16px;
+}
+.borads .borad span {
+  font-size: 75px;
+}
+.borads .borad .background-cover {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  position: absolute;
+  transition: background-color 333ms;
+}
+.borads .borad .background-cover:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.borads .borad .background-cover:hover + img {
+  transform: scale(1.1);
+}
+.borads .borad img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: transform 333ms;
+}
+.borads .boards-to-column-wrapper {
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}/*# sourceMappingURL=Boards.css.map */
